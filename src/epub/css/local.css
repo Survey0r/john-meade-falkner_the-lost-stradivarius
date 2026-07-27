@@ -1,6 +1,33 @@
 @charset "utf-8";
 @namespace epub "http://www.idpf.org/2007/ops";
 
+blockquote[xml|lang]{
+	font-variant: small-caps;
+}
+
+b {
+	font-variant:small-caps;
+}
+
+/* All epigraphs */
+
+[epub|type~="epigraph"]{
+	font-style: italic;
+	hyphens: none;
+	-epub-hyphens: none;
+}
+
+[epub|type~="epigraph"] i{
+	font-style: normal;
+}
+
+[epub|type~="epigraph"] cite{
+	font-style: normal;
+	font-variant: small-caps;
+	margin-top: 1em;
+}
+/* End all epigraphs */
+
 /* Full-page epigraphs */
 
 section[epub|type~="epigraph"]{
@@ -35,3 +62,60 @@ section[epub|type~="epigraph"] > *{
 }
 
 /* End full-page epigraphs */
+
+/* Letters */
+
+[epub|type~="z3998:letter"] header{
+	text-align: right;
+}
+
+footer{
+	margin-top: 1em;
+	text-align: right;
+}
+
+[epub|type~="z3998:letter"] header + p{
+	text-indent: 0;
+}
+
+p[epub|type~="z3998:salutation"]{
+	font-variant: small-caps;
+}
+
+b[epub|type~="z3998:salutation"]{
+	font-variant: small-caps;
+}
+
+[epub|type~="z3998:signature"]{
+	font-variant: small-caps;
+}
+
+/* End letters */
+
+/* Poems */
+
+[epub|type~="z3998:poem"] p{
+	text-align: initial;
+		text-indent: 0;
+}
+
+[epub|type~="z3998:poem"] p + p{
+	margin-top: 1em;
+}
+
+[epub|type~="z3998:poem"] p > span{
+	display: block;
+	padding-left: 1em;
+	text-indent: -1em;
+}
+
+[epub|type~="z3998:poem"] p > span + br{
+	display: none;
+}
+
+p span.i1{
+	padding-left: 2em;
+	text-indent: -1em;
+}
+
+/* End poems */
