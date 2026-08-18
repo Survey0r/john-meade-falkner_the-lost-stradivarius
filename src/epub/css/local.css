@@ -6,10 +6,6 @@ blockquote[xml|lang]{
 	font-variant: small-caps;
 }
 
-b{
-	font-variant: small-caps;
-}
-
 /* All epigraphs */
 [epub|type~="epigraph"]{
 	font-style: italic;
@@ -68,14 +64,8 @@ footer{
 	text-indent: 0;
 }
 
-p[epub|type~="z3998:salutation"]{
-	font-variant: small-caps;
-}
-
-b[epub|type~="z3998:salutation"]{
-	font-variant: small-caps;
-}
-
+p[epub|type~="z3998:salutation"],
+b[epub|type~="z3998:salutation"],
 [epub|type~="z3998:signature"]{
 	font-variant: small-caps;
 }
