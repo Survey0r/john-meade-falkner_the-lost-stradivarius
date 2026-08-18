@@ -42,7 +42,6 @@
 		<dc:language>en-GB</dc:language>
 		<dc:source>https://www.gutenberg.org/ebooks/14107</dc:source>
 		<dc:source>https://archive.org/details/loststradivarius00falk</dc:source>
-		<meta property="se:production-notes">None</meta>
 		<meta property="schema:wordCount">WORD_COUNT</meta>
 		<meta property="se:reading-ease.flesch">READING_EASE</meta>
 		<meta property="se:url.encyclopedia.wikipedia">https://en.wikipedia.org/wiki/The_Lost_Stradivarius</meta>
