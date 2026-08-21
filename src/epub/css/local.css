@@ -70,6 +70,10 @@ b[epub|type~="z3998:salutation"],
 	font-variant: small-caps;
 }
 
+p[epub|type~="z3998:salutation"]{
+	text-align: initial;
+}
+
 p[epub|type~="z3998:recipient"]{
 	font-style: italic;
 }
